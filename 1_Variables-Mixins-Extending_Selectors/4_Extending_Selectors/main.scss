@@ -1,0 +1,20 @@
+// By putting a % it makes it a placeholder selector, which makes sure that %bar isn't added to the css file
+// It's essentially hidden to css
+
+%bar {
+	height: 14px;
+	font-size: 10px;
+	> div {
+		float: left;
+		clear: none;
+	}
+}
+
+.menu {
+	@extend %bar;
+	background: #345;
+}
+
+.nav {
+	@extend %bar;
+}

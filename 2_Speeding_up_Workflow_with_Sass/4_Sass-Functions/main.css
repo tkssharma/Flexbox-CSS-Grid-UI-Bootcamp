@@ -1,0 +1,28 @@
+div {
+  height: 100px;
+  width: 255px;
+  border: 1px solid black;
+}
+
+.color {
+  background: #aa3edc;
+}
+
+.red, .blue, .green {
+  float: left;
+}
+
+.red {
+  background: red;
+  width: 170px;
+}
+
+.blue {
+  background: blue;
+  width: 220px;
+}
+
+.green {
+  background: green;
+  width: 62px;
+}

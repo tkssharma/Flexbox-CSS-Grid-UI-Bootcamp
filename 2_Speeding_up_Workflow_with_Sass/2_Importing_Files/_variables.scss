@@ -1,0 +1,11 @@
+// by putting _ in front of the file name, Sass wont go and make a css file.
+
+// Colors
+$background: desaturate(#187, 50%);
+$text-color: mix(#369, #187);
+$highlighted-text-color: lighten($text-color, 20%);
+$h1_size: 28px;
+// Sizes
+$green : #ccc;
+$gray : #ffffff;
+$width-box: 10px;

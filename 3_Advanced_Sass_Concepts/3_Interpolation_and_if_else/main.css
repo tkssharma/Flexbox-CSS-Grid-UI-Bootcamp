@@ -1,0 +1,27 @@
+div {
+  padding: 5px;
+}
+div .big {
+  content: "Huge!";
+}
+
+.red {
+  color: red;
+  background-image: url("images/red.jpg");
+  border: 1px solid black;
+}
+
+.blue {
+  color: blue;
+  background-image: url("images/blue.jpg");
+}
+
+.green {
+  color: green;
+  background-image: url("images/green.jpg");
+}
+
+.orange {
+  color: orange;
+  background-image: url("images/orange.jpg");
+}

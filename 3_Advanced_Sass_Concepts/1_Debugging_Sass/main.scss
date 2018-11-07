@@ -1,0 +1,57 @@
+// When you see an error at the end of your file, it may be 
+// caused by a missing end curly brace.
+
+
+   
+// This will compress the css file for performance.
+// sass --style compressed main.scss:main.css
+
+// This expands the css file for you
+// sass --style expanded main.scss:main.css
+
+// This will add coment lines in the css file telling you where 
+// to look in your Sass file for that particular code.
+// sass -l main.scss:main.css
+
+
+ 
+
+$primary-color: #369;
+$margin: 5px;
+$padding: $margin * 1.5;
+
+@mixin old {
+	
+	// When trying to compile, if it sees this mixin
+	// being used, it will warn you where it's being used
+	
+	@warn "Please use new() instead";
+}
+
+body {
+	background: $primary-color;
+	font-family: Futura, "Trebuchet MS", sans-serif;
+	> h1 {
+		font-size: 3em;
+		color: #eee;
+		margin: $margin 0 0 $margin;
+	}
+}
+
+.entry {
+	background: white;
+	margin: $margin;
+	padding: $padding;
+	h1 {
+		font-size: 1.2em;
+		margin: 0px;
+	}
+	.date {
+		font-size: 0.3em;
+		color: $primary-color;
+	}
+	a {
+		color: $primary-color;
+	}
+}
+

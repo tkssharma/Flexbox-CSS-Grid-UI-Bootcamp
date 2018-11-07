@@ -1,0 +1,30 @@
+.foxes.robin {
+  background: url("images/foxes/robin.jpg");
+}
+
+.foxes.stuart {
+  background: url("images/foxes/stuart.jpg");
+}
+
+.foxes.julia {
+  background: url("images/foxes/julia.jpg");
+}
+
+.foxes.kit {
+  background: url("images/foxes/kit.jpg");
+}
+
+.kitties.fuzzy {
+  background: url("images/kitties/fuzzy.jpg");
+}
+
+.kitties.luna {
+  background: url("images/kitties/luna.jpg");
+}
+
+.box {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  display: inline-block;
+}

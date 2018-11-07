@@ -1,0 +1,16 @@
+.box {
+	width: 100%;
+	height: 10px;
+}
+
+@each $member in robin, stuart, julia, kit {
+	.bandmember.#{$member} {
+		background: url("images/#{$member}.jpg");
+	}
+}
+
+@for $i from 1 through 100 {
+	.box:nth-child(#{$i}) {
+	background: darken(pink, $i);
+	}
+}

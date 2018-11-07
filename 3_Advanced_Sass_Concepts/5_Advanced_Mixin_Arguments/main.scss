@@ -1,0 +1,35 @@
+// $members... allows for as many names as you want
+// You can also use $members without the ... 
+// BUT YOU HAVE TO REMOVE THE COMMAS IN THE ARGUMENTS!
+// DON'T USE IT, IT'S NOT RECOMMENDED!
+
+
+@mixin band($name, $members...) {
+	@each $member in $members {
+		.#{$name}.#{$member} {
+			background: url("images/#{$name}/#{$member}.jpg");
+		}
+	}
+}
+
+@include band(foxes, robin,stuart,julia,kit);
+
+@include band(kitties, fuzzy, luna);
+
+
+// You can give something a default value 
+
+@mixin box($size: 10px, $color: blue, $display: block) {
+	width: $size;
+	height: $size;
+	background: $color;
+	display: $display;
+}
+
+
+// You can help distinguish witch variables are being used
+// by doing it this way
+
+.box {
+	@include box($display: inline-block);
+}
